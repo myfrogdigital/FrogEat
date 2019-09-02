@@ -1,0 +1,373 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    color: #212529;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+/* Remove Watermark */
+img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+    display: none;
+}
+
+/* Cabeçalho */
+
+header {
+    width: 100%;
+    height: 250px;
+    background-color: #f1f1f1;
+    position: relative;
+}
+
+header .logo {
+    font-size: 18pt;
+    color: #272727;
+    position: absolute;
+    left: 5%;
+    top: 20px;
+    font-family: 'Ubuntu', Arial, sans-serif;
+}
+
+header .inner {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+}
+
+header .inner h2 {
+    font-size: 25pt;
+    margin-bottom: 20px;
+}
+
+header .inner h3 {
+    font-size: 14pt;
+}
+
+header .logo span {
+    background: -webkit-linear-gradient(-180deg, #86EFBC, #10E650);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Conteúdo */
+
+main {
+    width: 100%;
+    padding: 0 5%;
+}
+
+.summary {
+    width: 100%;
+    min-height: 480px;
+}
+
+.summary .left {
+    width: 50%;
+    float: left;
+    padding-top: 30px;
+    padding-right: 5%;
+}
+
+.summary .left h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20pt;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.summary .left .list p {
+    margin-bottom: 7px;
+    font-size: 14pt;
+    font-weight: 400;
+}
+
+.summary .left .list p i {
+    color: #10E650;
+    margin-right: 10px;
+}
+
+.summary .right {
+    width: 50%;
+    float: right;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.summary .right iframe {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.summary .right a {
+    text-decoration: none;
+    font-size: 22pt;
+    background-color: #10E650;
+    padding: 10px 50px;
+    color: #fff;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+
+.summary .right a:hover {
+    padding: 10px 70px;
+}
+
+.details {
+    width: 100%;
+    padding-top: 30px;
+}
+
+/* Ambos Alinhamentos */
+
+.detail-left, .detail-right {
+    width: 100%;
+    height: 320px;
+    background-color: #f1f1f1;
+    display: flex;
+    position: relative;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.detail-left .inner h2, .detail-right .inner h2 {
+    margin-bottom: 15px;
+}
+
+.detail-left .inner p, .detail-right .inner p {
+    margin-bottom: 5px;
+}
+
+/* Imagem Alinhada a esquerda */
+
+.detail-left img {
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.detail-left .inner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+/* Imagem Alinhada a Direita */
+
+.detail-right img {
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    right: 0;
+    padding-bottom: 40px;
+}
+
+.detail-right .inner {
+    text-align: right;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+/* Área do botão de compra */
+.buy-button {
+    width: 100%;
+    height: 200px;
+    background-color: #f1f1f1;
+    position: relative;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.buy-button .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.buy-button .inner h2 {
+    font-weight: 400;
+    margin-bottom: 25px;
+    font-family: 'Ubuntu', Arial, sans-serif;
+}
+
+.buy-button .inner h2 span {
+    color: red;
+}
+
+.buy-button .inner h2 span:first-child {
+    text-decoration: line-through;
+}
+
+.buy-button .inner .btn {
+    text-decoration: none;
+    font-size: 22pt;
+    background-color: #10E650;
+    padding: 10px 50px;
+    color: #fff;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+
+.buy-button .inner .btn:hover {
+    padding: 10px 70px;
+}
+
+.questions {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.questions .title {
+    text-align: center;
+    margin: 25px 0;
+    margin-bottom: 50px;
+    font-size: 22pt;
+    font-weight: 600;
+    flex-grow: 0;
+    width: 100%;
+}
+
+.questions .question {
+    width: 50%;
+    display: flex;
+    float: left;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.questions .question:nth-child(2n+1) {
+    border-left: 1px solid rgba(148,148,148,0.2);
+}
+
+.questions .question span {
+    padding: 10px;
+    font-family: 'Aladin', 'Open Sans', Arial, sans-serif;
+    font-size: 20pt;
+}
+
+.questions .question h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-size: 18pt;
+    color: #4c4c4c;
+}
+
+.questions .question p {
+    text-align: justify;
+    color: #777;
+}
+
+/* Rodapé */
+
+footer {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 10pt;
+    color: #757575;
+    margin-top: 10px;
+}
+
+/* Responsivo */
+
+@media only screen and (max-width: 900px) {
+    .summary .left {
+        width: 100%;
+    }
+
+    .summary .left .list {
+        margin-bottom: 40px;
+    }
+
+    .summary .right {
+        width: 100%;
+        padding-bottom: 50px;
+        float: none;
+    }
+
+    .summary .right iframe {
+        width: 100%;
+        height: auto;
+        min-height: 200px;
+    }
+
+    .questions .question {
+        border-left: 1px solid rgba(148,148,148,0.2);
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .detail-left, .detail-right {
+        height: auto;
+        min-height: 320px;
+        display: block;
+    }
+
+    .detail-left img, .detail-right img {
+        width: 100%;
+        height: 320px;
+        position: static;
+        padding: 0;
+    }
+
+    .detail-left .inner, .detail-right .inner {
+        position: static;
+        transform: none;
+        margin: 50px 0;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .buy-button {
+        height: auto;
+        padding: 50px 0;
+    }
+
+    .buy-button .inner {
+        position: static;
+        width: 100%;
+        transform: none;
+    }
+}
